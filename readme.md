@@ -29,9 +29,7 @@ _stage_ingest_SCD_merge_ notebook📓:: PySpark script to merge the data in stag
 
 3. **Automating the pipeline**:
 A Databricks workflow is configured to trigger upon file arrival that conatains two tasks, one for each notebook.
-    <br/>
-    ![pipeline run](https://github.com/user-attachments/assets/c81a0ce2-b307-4b67-9ef3-deb80501b474)
-    <br/>
+
 5. **Alerting**:
 Set up an email alerting system within Databricks to notify users upon the completion of the workflow. This ensures prompt attention to the pipeline's status, which is crucial for production environments.
   
