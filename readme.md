@@ -24,8 +24,8 @@ This project is designed to automate a data pipeline that processes the daily-da
 ## Steps Followed<br/>
 1. **Storage Setup**: Configured an AWS S3 bucket to receive daily data files.
 2. **Data Processing and Archiving**:<br/>
-_stage_delta_archive_load_ notebook📓: PySpark script to load the input file into a delta table and move the file to archive.<br/>
-_stage_ingest_SCD_merge_ notebook📓:: PySpark script to merge the data in stage table with the target table modeling SCD (Type 1) data.<br/>
+source_load_code notebook📓: PySpark script to load the input file into a delta table and move the file to archive.<br/>
+target_load_code notebook📓:: PySpark script to merge the data in stage table with the target table modeling SCD (Type 1) data.<br/>
 
 3. **Automating the pipeline**:
 A Databricks workflow is configured to trigger upon file arrival that conatains two tasks, one for each notebook.
